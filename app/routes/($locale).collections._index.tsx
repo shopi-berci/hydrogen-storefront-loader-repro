@@ -1,3 +1,5 @@
-export default function Collections() {
-  return <span>Yas Queen</span>;
+import {redirect} from '@remix-run/react';
+
+export function loader() {
+  return redirect('/collections/all');
 }
