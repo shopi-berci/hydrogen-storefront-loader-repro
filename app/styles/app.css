@@ -402,11 +402,6 @@ button.reset:hover:not(:has(> *)) {
   margin-bottom: 2rem;
 }
 
-.product-item img {
-  height: auto;
-  width: 100%;
-}
-
 /*
 * --------------------------------------------------
 * routes/products.$handle.tsx
@@ -507,4 +502,8 @@ button.reset:hover:not(:has(> *)) {
 
 .account-logout {
   display: inline-block;
+}
+
+body {
+  height: 100vh;
 }

@@ -79,7 +79,7 @@ export default function Collection() {
       <p className="collection-description">{collection.description}</p>
       <PaginatedResourceSection
         connection={collection.products}
-        resourcesClassName="products-grid"
+        resourcesClassName="w-full grid grid-wrap grid-cols-5 gap-12 w-48"
       >
         {({node: product, index}) => (
           <ProductItem
@@ -122,7 +122,7 @@ function ProductItem({
           aspectRatio="1/1"
           data={product.featuredImage}
           loading={loading}
-          sizes="(min-width: 45em) 400px, 100vw"
+          className="max-w-none w-24 h-24 object-cover"
         />
       )}
       <h4>{product.title}</h4>
